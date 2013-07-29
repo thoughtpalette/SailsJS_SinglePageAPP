@@ -32,4 +32,6 @@ Spin up mongo, navigate to your project root and start sails `sails lift`
 
 This will redirect you to `/admin` which is a CMS page for the front-end using angular bindings.
 
+#### Thank you /u/MikeDevita for https://github.com/RelativeMedia/sails-PassportLocalMongoExample/
+
 
