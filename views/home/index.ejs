@@ -1,0 +1,73 @@
+<div id="site-wrapper" ng-controller="HomeController">
+    
+    <section class="container hero">
+        <section class="row">
+            <img class="logo" src="images/layout/code-logo.png" alt="Chicago Developer Elite">
+        </section><!-- end row -->
+
+    </section><!-- end container -->
+
+    <section class="container">
+
+        <section class="row">
+            <h1><strong>Chicago Ogilvy Developer Elite</strong> is Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h1>
+        </section><!-- end row -->
+
+    </section><!-- end container -->
+
+    <section class="container header">
+            <h2>The Team</h2>
+    </section><!-- end container -->
+
+    <section class="container people-list">
+        <section class="row clearfix">
+                
+                <article class="person" ng-repeat="person in employeeList">
+                    <img src="{{person.imageUrl}}" alt="{{person.name}}">
+
+                    <h3><strong>{{person.name}}</strong></h3>
+                    <p>{{person.shortDesc}}</p>
+                </article>
+
+        </section><!-- end row -->
+
+    </section><!-- end container -->
+
+    <section class="container header">
+            <h2>The Work</h2>
+    </section><!-- end container -->
+
+    <section class="container work-list">
+
+        <section class="row">
+        
+                <article class="portfolio-item" ng-repeat="item in portfolio">
+                    <h3>{{item.title}}</h3>
+                    <img src="{{item.imageUrl}}" alt="{{item.title}}">
+
+                    <ul>
+                        <li class="tag" ng-repeat="tech in item.technology">{{tech}}</li>
+                    </ul>
+
+                    <a class="tag" href="{{item.liveUrl}}" target="_blank" title="{{item.title}}">launch</a>
+
+                    <div class="clear"></div>
+                    <p>{{item.description}}</p>
+                </article>
+        
+        </section><!-- end row -->
+
+    </section><!-- end container -->
+
+    <footer class="container">
+
+        <section class="row">
+            
+            <!-- <div class="location-point-wrapper"></div> -->
+            <!-- <span class="location-point"></span> -->
+
+        </section><!-- end row -->
+
+    </footer><!-- end container -->                                             
+
+</div><!-- end site-wrapper -->

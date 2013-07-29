@@ -1,0 +1,81 @@
+<div ng-controller="AdminController">
+<section class="container header">
+        <h2>Ogilvy Code - Admin Panel <button class="logout" ng-click="logout()">logout</button></h2>
+</section><!-- end container -->
+
+<div id="site-wrapper">
+
+    <div class="main-container">
+    
+        <div class="add-person">
+            <h2><strong>Add an Employee</strong></h2>
+
+            <label for="">Employee Name</label>
+            <input type="text" name="" id="" ng-model="employee.name">
+
+            <label for="">Image Link</label>
+            <input type="text" name="" id="" ng-model="employee.imageLink" class="no-margin-bot">
+            <p class="small-font">Example: images/content/person-image-placeholder.jpg</p>
+
+            <label for="">Short Description</label>
+            <textarea name="" id="" cols="30" rows="10" ng-model="employee.desc"></textarea>
+
+            <button ng-click="addEmployee(employee)" class="employee-btn">Add Employee</button>
+        </div><!-- end add-person -->
+
+        <div class="add-portfolio-item">
+            <h2><strong>Add Portfolio Item</strong></h2>
+
+            <label for="">Title (website)</label>        
+            <input type="text" name="" id="" ng-model="item.title">
+
+            <label for="">Image Link</label>
+            <input type="text" name="" id="" ng-model="item.imageUrl" class="no-margin-bot">
+            <p class="small-font">Example: images/content/site-placeholder.jpg</p>            
+
+            <label for="">Live Url</label>
+            <input type="text" name="" id="" ng-model="item.liveUrl">
+
+            <div class="tag-wrapper clearfix">
+
+                <label for="">Technologys</label>
+                <input type="text" name="" id="" ng-model="item.tech.name">
+                <span class="tag" ng-repeat="tech in item.tech" ng-click="removeTech(tech)">{{tech}}</span>
+                <button ng-click="addAnotherTech(item)" class="add-tech-item">+</button>
+                <button ng-click="removeTech()" class="remove-tech-item">x</button>
+
+            </div><!-- end tag-wrapper -->
+
+            <label for="">Description</label>
+            <textarea name="" id="" cols="30" rows="10" ng-model="item.desc"></textarea>
+
+            <button ng-click="addPortfolioItem(item)" class="portfolio-btn">Add Portfolio Item</button>
+
+        </div><!-- end add-portfolio-item -->
+
+        <div class="current-items">
+
+            <h2><strong>Remove Current Items</strong></h2>
+
+            <h3><strong>Employees</strong></h3>
+            <ul class="employees">
+                <li ng-repeat="person in employeeList" ng-click="removePerson(person.id)">
+                    <p><strong>{{person.name}}</strong></p>
+                    <span class="remove-person">x</span>
+                </li>
+            </ul>
+
+            <h3><strong>Portfolio Items</strong></h3>
+            <ul class="portfolio-items">
+                <li ng-repeat="portfolioItem in portfolio" ng-click="removePortfolioItem(portfolioItem.id)">
+                    <p><strong>{{portfolioItem.title}}</strong></p>
+                    <span class="remove-item">x</span>
+                </li>
+            </ul>
+            
+        </div>
+
+    </div><!-- end main-container -->       
+
+</div><!-- end site-wrapper -->
+</div>

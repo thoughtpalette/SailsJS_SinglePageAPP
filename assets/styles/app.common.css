@@ -1,0 +1,408 @@
+/* Last Updated: 07-2013
+   Author:  Chris Marshall
+            Ogilvy & Mather
+
+   ------------------------*/
+
+/* =GENERAL
+   ----------------------------------------------------*/
+   
+body {
+	background: transparent none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #202020;
+}
+
+
+
+a {
+	color: #202020;
+	text-decoration: underline;
+	
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+a:active {
+    outline: 0 none;
+}
+
+a:focus {
+	color: #fff;
+    outline: 0 none;
+}
+
+strong {font-weight: bold;}
+em {font-style: italic;}
+
+ul {list-style:none;}
+
+.error {font-weight: bold}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.clear {clear:both;}
+
+.small-font {
+	font-size:10px;
+	margin-bottom:15px;
+}
+
+.main-container .no-margin-bot {margin-bottom:0;}
+
+/* Layout Styles ---------------------*/
+
+#site-wrapper {
+	border-top:5px solid #333332;
+}
+
+.container {
+	width:100%;
+	display:block;
+}
+
+.row {
+	width:75%;
+	margin:0 auto;
+	position:relative;
+}
+
+.row img.logo {
+	display:block;
+	width:150px;
+	margin:0 auto;
+	padding-top:25px;
+}
+
+.row h1, .header h2 {
+	width:80%;
+	color:#8e8e8e;
+}
+
+.row h1 {
+	text-align:center;
+	font-size:30px;
+	margin:38px auto;
+}
+
+.container.header {
+	background:#333332;
+	clear:both;
+}
+
+.header h2 {
+	font-size:36px;
+	margin:0 auto;
+	color:#fff;	
+}
+
+.tag {
+	float:left;
+	margin-left:7px;
+	padding:3px 18px;
+	color:#fff;
+	text-transform: uppercase;
+	background:#ff6d6c;	
+}
+
+a.tag {
+	float:right;
+	background:#c5000e;
+	margin-bottom:20px;
+}
+
+.hero {
+	min-height:200px;
+	background:url("../images/layout/city-header-image.jpg") no-repeat top center;
+	background-size:cover;
+	border-bottom:2px solid #333332;
+}
+
+/* Person Section ------------------------------- */
+
+.container.people-list {
+	background:#e2e2e2;
+}
+
+.container.people-list {
+	padding:27px 0;
+}
+
+.person {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	float:left;
+	width:25%;
+	padding:27px 8px;
+}
+
+.person img {
+/*	position:relative;
+	z-index:1;*/
+	display:block;
+	width:62%;
+	height:auto;
+	margin:0 auto;
+	border:2px solid #fff;
+}
+
+.person h3, .person p {
+	text-align:center;
+}
+
+.person h3 {
+	margin:15px 0;
+}
+
+/* Unused for now, pentagon overlay
+.mask {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:5;
+	background:url("../images/layout/person-mask.png") no-repeat;
+} */
+
+/* Work Section ----------------------------------------*/
+
+.container.work-list {
+	padding:27px 0;
+}
+
+.portfolio-item,
+.portfolio-item img {
+	width:100%;
+}
+
+.portfolio-item {
+	margin-bottom:35px;
+}
+
+.portfolio-item h3 {
+	font-size:25px;
+	margin-bottom:15px;
+}
+
+.portfolio-item img {
+	display:block;
+	margin: 0 auto;
+	border-top:1px solid #525252;
+	border-left:1px solid #525252;
+	border-right:1px solid #525252;
+	border-bottom:6px solid #525252;
+}
+
+.portfolio-item p {
+	margin:10px 7px;
+	line-height:22px;
+	clear:both;
+}
+
+/* Footer Styles ------------------------------------------*/
+
+footer.container {
+	min-height:263px;
+	background:#333332 url("../images/layout/footer-map-placeholder.jpg") center no-repeat;
+	background-size:cover;
+	border-top:2px solid #333332;
+	border-bottom:5px solid #333332;
+}
+
+.location-point-wrapper,
+.location-point {
+	width:152px;
+	height:152px;
+	-webkit-border-radius: 76px;
+	-moz-border-radius: 76px;
+	border-radius: 76px;
+}
+
+.location-point-wrapper {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	background:none transparent;
+	border:5px solid #ce4241;	
+}
+
+.location-point {
+	background:#FF0400;
+	opacity:.55;
+	display:block;
+	margin:0 auto;
+	margin-top:55px;
+}
+
+
+/* Admin Page */
+
+.main-container {
+	width:80%;
+	margin:0 auto;
+	padding-top:100px;
+}
+
+.main-container label,
+.main-container input,
+.main-container textarea {
+	display:block;
+	margin-bottom:15px;
+}
+
+.add-person,
+.add-portfolio-item,
+.current-items {
+	width:267px;
+	float:left;
+	margin-right:50px;
+}
+
+.current-items ul {
+	margin-bottom:30px;
+}
+
+.add-person h2,
+.add-portfolio-item h2,
+.current-items h2 {
+	font-size:18px;
+	padding-bottom:8px;
+	margin-bottom:10px;
+	border-bottom:1px solid #333332;
+}
+
+.current-items h2 {
+	margin-bottom:30px;
+}
+
+.current-items h3 {
+	font-size:16px;
+	margin-top:10px;
+	padding-bottom:5px;
+	border-bottom:1px solid #333332;
+}
+
+.current-items li {
+	position:relative;
+	display:block;
+	padding:8px 8px;
+	border-bottom:1px solid #333332;
+	color:#666666;
+}
+
+.current-items li:hover {
+	cursor:pointer;
+	background:#FFCACA;
+}
+
+.current-items li span {
+	position:absolute;
+	top:8px;
+	right:5px;
+	color:#c5000a;
+	font-weight:bold;
+	line-height:14px;
+}
+
+.tag-wrapper {
+	position:relative;
+}
+
+.tag-wrapper .tag {
+	margin-bottom:5px;
+}
+
+button.add-tech-item {
+	position: absolute;
+	top: 29px;
+	right: 80px;	
+}
+
+button.remove-tech-item {
+	position: absolute;
+	top: 29px;
+	right: 55px;	
+}
+
+button.logout {
+	float:right;
+	margin-right:100px;
+	margin-top:15px;
+}
+
+/* Media Queries
+	- Keeping in one file for now as it's a single page site, don't want
+	  that extra http request ;}
+---------------------------------------------------------------------*/
+
+@media screen and (min-width:200px) and (max-width:600px) {
+
+	.row h1 {
+		font-size:14px;
+		line-height:20px;
+	}
+
+	.header h2 {
+		font-size:28px;
+	}
+
+	strong {
+		display:block;
+		margin-bottom:10px;
+		color:#333332;
+	}
+	
+	.person {
+		float:none;
+		width:80%;
+		margin:0 auto;
+	}
+
+	.person p {
+		line-height:20px;
+	}
+
+	.tag {
+		margin:0;
+		padding:3px 4px;
+		font-size:10px;
+	}
+
+}
+
+/* users/ajax */
+
+.container h1 {
+	margin-top:40px;
+}
+
+.user-list {
+	float:left;
+	width:400px;
+	margin-right:30px;
+}
+
+.user-list li {
+	position:relative;
+}
+
+.delete-user {
+	position:absolute;
+	top:0;
+	right:0;	
+	cursor:pointer;
+}
+
+.delete-user:hover {
+	color:#c5000a;
+}
