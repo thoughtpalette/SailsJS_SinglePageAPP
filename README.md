@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# OgilvyCode
+
+# Single Page App
 ### NodeJS, SailsJS, AngularJS
 
 ### How to debug
@@ -14,4 +14,3 @@ SailsJS_SinglePageAPP
 =====================
 
 SailsJS, NodeJS, AngularJS. 
->>>>>>> 5cbf6f884b96be24f42c7f2b02d02cbabf3704ba
