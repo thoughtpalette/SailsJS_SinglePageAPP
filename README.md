@@ -10,8 +10,8 @@ Follow instructions to get that running
 Switch to project/nodeapp folder in terminal
 Debug with `node --debug app.js`
 
-### Setup
-Grab the sails-mongo adapter https://github.com/balderdashy/sails-mongo
+### Database
+Using the sails-mongo adapter https://github.com/balderdashy/sails-mongo
 Add your database
 Ex:
 ```javascript
