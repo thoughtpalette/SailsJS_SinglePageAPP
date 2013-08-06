@@ -26,11 +26,6 @@ function HomeController($scope, $routeParams) {
             type:'GET',
             success: function(data, textStatus, jqXHR) {
                 $scope.portfolio = data;
-
-                // $.each($scope.portfolio, function(key,value) {
-                //     $scope.tech.push(item.name);
-                // });
-
                 $scope.$apply();
             },
             error: function(jqXHR, textStatus, errorThrown) {
