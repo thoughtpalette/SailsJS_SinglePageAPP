@@ -11,7 +11,8 @@
         "optimist": "0.3.4",
         "passport": "latest",
         "passport-local": "latest",
-        "bcrypt": "latest"        
+        "bcrypt": "latest",
+        "sails-mongo" : "latest"        
     },
     "scripts": {
         "start": "node app.js",
