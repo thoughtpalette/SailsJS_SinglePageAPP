@@ -7,7 +7,7 @@ function AdminController($scope, $routeParams) {
 
 	$scope.addEmployee = function(employee) {
         $.ajax({
-        	url:'http://localhost:1337/person/create',
+        	url:'/person/create',
             data: {
                 name: employee.name,
                 imageUrl: employee.imageLink,
@@ -28,7 +28,7 @@ function AdminController($scope, $routeParams) {
     $scope.addPortfolioItem = function(item) {
 
         $.ajax({
-            url:'http://localhost:1337/portfolio/create',
+            url:'/portfolio/create',
             data: {
                 title: item.title,
                 imageUrl: item.imageUrl,
@@ -50,7 +50,7 @@ function AdminController($scope, $routeParams) {
 
     $scope.getEmployeeList = function() {
         $.ajax({
-            url: 'http://localhost:1337/person',
+            url: '/person',
             type:'GET',
             success: function(data, textStatus, jqXHR) {
                 $scope.employeeList = data;
@@ -65,7 +65,7 @@ function AdminController($scope, $routeParams) {
 
     $scope.getPortfolio = function() {
         $.ajax({
-            url: 'http://localhost:1337/portfolio',
+            url: '/portfolio',
             type:'GET',
             success: function(data, textStatus, jqXHR) {
                 $scope.portfolio = data;
@@ -80,7 +80,7 @@ function AdminController($scope, $routeParams) {
 
     $scope.removePerson = function(userId) {
         $.ajax({
-            url: 'http://localhost:1337/person/destroy/' + userId,
+            url: '/person/destroy/' + userId,
             type: 'DELETE',         
             success: function(data) {
                 $scope.getEmployeeList();
@@ -94,7 +94,7 @@ function AdminController($scope, $routeParams) {
 
     $scope.removePortfolioItem = function(id) {
         $.ajax({
-            url: 'http://localhost:1337/portfolio/destroy/' + id,
+            url: '/portfolio/destroy/' + id,
             type: 'DELETE',         
             success: function(data) {
                 $scope.getPortfolio();
@@ -122,7 +122,7 @@ function AdminController($scope, $routeParams) {
 
     $scope.logout = function() {
         $.ajax({
-            url: 'http://localhost:1337/logout',
+            url: '/logout',
             success: function(data) {
                 window.location.href = '/';
             },

@@ -4,7 +4,7 @@ function AjaxController($scope, $routeParams) {
 
 	$scope.getUserList = function() {
         $.ajax({
-            url: 'http://localhost:1337/user',
+            url: '/user',
             type:'GET',
             success: function(data, textStatus, jqXHR) {
             	$scope.userList = data;
@@ -24,7 +24,7 @@ function AjaxController($scope, $routeParams) {
 			userDesc = $('#description').val();
 
         $.ajax({
-        	url:'http://localhost:1337/user/create?name=' + userName + '&email=' + userEmail + '&profileDescription=' + userDesc,
+        	url:'/user/create?name=' + userName + '&email=' + userEmail + '&profileDescription=' + userDesc,
 			type:'POST',        	
         	success: function(data) {
         		$scope.getUserList();
@@ -38,7 +38,7 @@ function AjaxController($scope, $routeParams) {
 
 	$scope.deleteUser = function(userId) {
         $.ajax({
-        	url: 'http://localhost:1337/user/destroy/' + userId,
+        	url: '/user/destroy/' + userId,
 			type: 'DELETE',     	
         	success: function(data) {
         		$scope.getUserList();

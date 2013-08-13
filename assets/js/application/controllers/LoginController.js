@@ -1,16 +1,16 @@
 'use strict';
-function LoginController($scope, $routeParams) {
+function LoginController($scope, $routeParams, $rootScope) {
 
   $scope.login = function(user) {
 
     $.ajax({
-        url: 'http://localhost:1337/auth/login',
+        url: '/auth/login',
         data: {
             username: user.name,
             password: user.password
         },
         success: function(data) {
-            window.location.href = 'http://localhost:1337/admin';
+            window.location.href = '/admin';
         },
         error: function(textError) {
             alert('failed to login :{');

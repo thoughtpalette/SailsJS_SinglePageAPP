@@ -6,7 +6,7 @@ function HomeController($scope, $routeParams) {
 
 	$scope.getEmployeeList = function() {
         $.ajax({
-            url: 'http://localhost:1337/person',
+            url: '/person',
             type:'GET',
             success: function(data, textStatus, jqXHR) {
             	$scope.employeeList = data;
@@ -22,7 +22,7 @@ function HomeController($scope, $routeParams) {
 
     $scope.getPortfolio = function() {
         $.ajax({
-            url: 'http://localhost:1337/portfolio',
+            url: '/portfolio',
             type:'GET',
             success: function(data, textStatus, jqXHR) {
                 $scope.portfolio = data;
