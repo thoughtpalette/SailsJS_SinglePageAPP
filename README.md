@@ -2,7 +2,7 @@
 # Responsive Single Page App
 ### NodeJS, SailsJS, AngularJS with Admin Panel
 
-![alt tag](https://raw.github.com/thoughtpalette/SailsJS_SinglePageAPP/tree/master/assets/images/home.png)
+![alt tag](https://raw.github.com/thoughtpalette/SailsJS_SinglePageAPP/master/assets/images/home.png)
 
 ### How to Install
 
@@ -53,13 +53,13 @@ You can then add the authentication back on the UserController so only you can n
 Once your main admin user is created, navigate to `/login` and login with your credentials. 
 This will redirect you to the admin interface.
 
-![alt tag](https://raw.github.com/thoughtpalette/SailsJS_SinglePageAPP/tree/master/assets/images/login.png)
+![alt tag](https://raw.github.com/thoughtpalette/SailsJS_SinglePageAPP/master/assets/images/login.png)
 
 ### Admin
 
 In this panel you have control to add/delete employees and portfolio items to the front-end and logout as as admin.
 
-![alt tag](https://raw.github.com/thoughtpalette/SailsJS_SinglePageAPP/tree/master/assets/images/admin.png)
+![alt tag](https://raw.github.com/thoughtpalette/SailsJS_SinglePageAPP/master/assets/images/admin.png)
 
 ### How to debug
 Install node-inspector globally
